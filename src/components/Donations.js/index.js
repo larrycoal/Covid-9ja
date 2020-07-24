@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import {Button} from '@material-ui/core'
+import Save from '@material-ui/icons/Save'
 import {Zoom} from 'react-reveal'
 const Donations = () => {
   const [amount] = useState([100, 350, 750]);
@@ -26,6 +27,7 @@ const Donations = () => {
               variant="contained"
               color="primary"
               href="#contained-buttons"
+              startIcon={Save}
             >
               Link
             </Button>
